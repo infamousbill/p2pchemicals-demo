@@ -1,0 +1,627 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pad2Pad Chemicals</title>
+	<link rel="image_src" href="/images/onepage_scroll_image.png" />
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+  <script type="text/javascript" src="onepagescroll.js"></script>
+  <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+  <title>Pad2Pad Chemicals</title>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: #030d19;
+      padding: 0;
+      text-align: center;
+      font-family: Cera Pro Regular;
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /**.wrapper {
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }**/
+    
+    a {
+      text-decoration: none;
+      color: #FFF;
+    }
+       
+    .pointer {
+      color: #9b59b6;
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+      margin-top: 15px;
+    }
+    code {
+      margin: 20px 1%;
+      float: left;
+      width: 48%;
+      height: 105px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      border-radius: 5px;
+      padding:5px;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 25px;
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+    code.html {
+      color: #7EC9E6;
+    }
+    code.js {
+      color: #FFAD00;
+    }
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+       
+    .main h1.demo1 {
+      background: #1ABC9C;
+    }
+
+    
+    header {
+      position: relative;
+      z-index: 10;
+    }
+    .main section .page_container {
+      display: inline-block;
+      position: relative;
+      top: 10%;
+      margin: 0 auto 0;
+      /**main contenti burdan çıkartmaya çalış**/
+     
+      z-index: 3;
+      justify-content: center;
+    }
+    .main section  {
+      overflow: hidden;
+    }
+    
+    .main section > img {
+      position: absolute;
+      max-width: 100%;
+      z-index: 1;
+    }
+    
+   /**PAGE 1 BACKGROUND**/ .main section.page1 {
+      background-image: url(images/bg-1.png); /**png yap kaliteli hale getir.**/
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+/**    .main section.page1 h1 {
+      float: none;
+      justify-content: center;
+      display: block;
+      text-align: center;
+      padding: 0;
+      font-size: 44px;
+      color: rgb(255, 255, 255);
+    }
+    .main section.page1 h2 {
+      font-size: 18px;
+      display: block;
+      color: rgba(255, 255, 255, 0.85);
+      text-align: center;
+      width: 435px;
+      line-height: 160%;
+    }**/
+    
+    .main section.page2 {
+      background-image: url(images/bg-2.png); /**png yap kaliteli hale getir.**/
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+    .main section.page2 > img {
+      position: absolute;
+      top: -300px;
+      left: 50%;
+      margin-left: -1095px;
+    }
+    .main section.page2 .page_container {
+      overflow: hidden;
+      display: inline-block;
+      position: relative;
+      top: 10%;
+      margin: 0 auto 0;
+    }
+
+    .viewing-page-2 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: #FFF;
+      }
+    .main section.page3 {
+      background-image: url(images/bg-3.png); /**png yap kaliteli hale getir.**/
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+    .main section.page3 .page_container {
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /**PAGE FOUR**/
+    .main section.page4 {
+      background-image: url(images/bg-4.png); /**png yap kaliteli hale getir.**/
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+    body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+    
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body.disabled-onepage-scroll  section .page_container h1{
+      text-align: center;
+      font-size: 50px;
+      width: 100%;
+    }
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
+      text-align: center;
+      width: 100%;
+    }
+    
+    body.disabled-onepage-scroll .main section.page1 > img {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+    }
+    
+    body.disabled-onepage-scroll .main section > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+    
+    body.disabled-onepage-scroll .main section.page3 .page_container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+    }
+    .main section.page1 h1 strong {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 16px;
+      padding: 10px 10px;
+      display: inline-block;
+      line-height: 140%;
+      background: #FFF;
+      border-radius: 3px;
+      position: relative;
+      top: -13px;
+      
+    }
+    
+    .text-btn {
+      display: block;
+      color: #000;
+      border-bottom: 2px dotted #000;
+      max-width: 300px;
+      margin: 30px auto 30px;
+      line-height: 200%;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }body .one .bsa_it_ad { background: transparent; border: none; font-family: inherit; padding: 0 15px 0 10px; margin: 0; text-align: center; }
+body .one .bsa_it_ad:hover img { -moz-box-shadow: 0 0 3px #000; -webkit-box-shadow: 0 0 3px #000; box-shadow: 0 0 3px #000; }
+body .one .bsa_it_ad .bsa_it_i { display: block; padding: 0; float: none; margin: 0 0 5px; }
+body .one .bsa_it_ad .bsa_it_i img { padding: 0; border: none; }
+body .one .bsa_it_ad .bsa_it_t { padding: 6px 0; }
+body .one .bsa_it_ad .bsa_it_d { padding: 0; font-size: 12px; color: #333; }
+body .one .bsa_it_p { display: none; }
+body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; margin: 12px 15px 0; text-align: center; }
+
+
+/**Page Two**/
+.page-title-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;   
+}
+.page-title{
+  color: #fff;
+  font-size: 55px;
+  font-family: Cera Pro Bold;
+  margin-bottom: -18px;
+  letter-spacing: 17px;
+}
+.title-lines{
+  border-bottom: 1px solid #3baf29;
+  width: 408px;
+}
+.vl-2{
+  display: inline-block;
+  margin-right: 0;
+  border-left: 1px solid #3baf29;
+  height: 5em;
+}
+
+.page-title-container1{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 15%;
+  align-items: center;
+  text-align: left;
+  margin-top: 250px;
+  margin-bottom: -50px;  
+}
+.page-title-container2{
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  height: 150px;
+  align-items: center;
+  text-align: right;
+  column-gap: 5px;
+  margin-bottom: 30px;
+}
+.introduce{
+  font-size: 95px;
+  font-family: Cera Pro Regular;
+  font-style: italic;
+  color: #FFF;
+  letter-spacing: 8px;
+  margin-left: -120px;
+}
+.introduce2{
+  font-size: 95px;
+  font-family: Cera Pro Bold;
+  color: #FFF;
+  letter-spacing: 8px;
+}
+.introduce3{
+  font-size: 58px;
+  font-family: Cera Pro Bold;
+  color: #3baf29;
+  letter-spacing: 18px;
+  margin-bottom: 50px;
+}
+.scroll-down-button{
+  display: inline-block;
+  width: 490px;
+  padding: 15px 15px;
+  border: 1px solid #3baf29;
+  background-color: #3baf29;
+  color: #fff;
+  font-size: 18px;
+  font-family: Cera Pro Regular;
+  letter-spacing: 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  margin-top: 22px;
+  opacity: 0.9;
+}
+.scroll-down-button:hover {
+  box-shadow: 0px 2px 8px rgba(90, 255, 90, 0.5);
+  opacity: 1;
+}
+.products-page-content{
+  margin-top: -30px;
+
+}
+.product-first-line{
+  display: grid;
+  grid-template-columns: 280px 280px 280px;
+  height: auto;
+  column-gap: 25px;
+}
+
+.product-container1 {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  align-items: top;
+  padding: 30px 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.product-container1:hover {
+ border: 1px solid rgb(59, 175, 41);
+}
+.product-second-line{
+  display: grid;
+  grid-template-columns: 280px 280px;
+  column-gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-container2 {
+  display: grid;
+  grid-template-rows: 80px 40px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  align-items: top;
+  padding: 30px 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.product-container2:hover {
+  background-color: rgba(0, 3, 49, 0.2);
+ border: 1px solid rgb(59, 175, 41);
+}
+.product-title{
+  color: #FFF;
+  font-size: 45px;
+  font-family: Cera Pro Black;
+  margin-bottom: 15px;
+  line-height: 85%;
+}
+.product-info{
+  color: #3baf29;
+  font-size: 14px;
+  font-style: italic;
+}
+.left-side-scroll{
+  color: #FFF;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 13px;
+  letter-spacing: 3px;
+  position: fixed;
+  left: 15px;
+  bottom: 55px;
+  z-index: 500;
+  opacity: 0.7;
+}
+.right-side-scroll{
+  color: #FFF;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 13px;
+  letter-spacing: 3px;
+  position: fixed;
+  right: 15px;
+  bottom: 55px;
+  opacity: 0.7;
+  z-index: 500;
+}
+::selection {
+  
+  background: #7aca6e;
+}
+
+.pro-pre{
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+
+	</style>
+  <script src="slider.js" defer></script>
+</head>
+<body >
+    
+    <div class="header">
+      <div class="left-section">
+        <a href="index.html"><img class="gfs-logo" src="images/logo.png" /></a>
+      </div>
+      <div class="right-section">
+        <p class="phone-mail">681-753-1555</p>
+        <div class="vl"></div>
+        <a class="phone-mail" href="mailto:pad2padlogistics@gmail.com">pad2padlogistics@gmail.com</a>
+        <div class="vl"></div>
+        <img class="tw-icon" src="images/tw.png" />
+        <img class="fb-icon" src="images/fb.png" />
+        <img class="ig-icon" src="images/ig.png" />
+        <img class="li-icon" src="images/li.png" />
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-line"></div>
+      <p>&#169; Pad2Pad Chemicals, 2022. All Rights Reserved.</p>
+    </div>
+    <div class="left-side-scroll">SCROLLDOWN &gt;</div>
+    <div class="right-side-scroll">&lt; SCROLLUP</div>
+	  <div class="main">	    
+      <section class="page1">
+      <div class="page_container">
+        <div class="page-title-container1">
+          <div class="title-line"></div>
+          <div class="introduce">WE SPECIALIZE IN</div>         
+       </div>
+       <div class="page-title-container2">        
+        <div class="introduce2">FRICTION REDUCERS</div>
+        <div class="title-line"></div>         
+     </div>
+     <div class="introduce3">BIOCIDE & SCALE INHIBITORS</div>
+     <div class="scroll-down-button">&darr; SCROLL DOWN TO SEE OUR PRODUCTS &darr;</div>
+  
+     
+    </div>
+      </section>
+	    
+	    <section class="page2"> 
+	      <div class="page_container">
+          <div class="page-title-container">
+            <div class="page-title">PRODUCTS</div>
+            <div class="title-lines"></div>
+          </div>
+         <div class="products-page-content">          
+  <div class="product-first-line">     
+    <div class="product-container1">
+      <div class="product-title"><a href="files/TruSlick A.pdf" download="Truslick A">TRUSLICK A</div>
+      <div class="product-info">Next Generation Anionic Friction Reducer for
+        Hydraulic Fracturing</div></a>
+    </div>
+    <div class="product-container1">
+      <div class="product-title"><a href="files/TruSlick C.pdf" download="Truslick C">TRUSLICK C</div>
+      <div class="product-info">Next Generation Cationic Friction Reducer for
+        Hydraulic Fracturing</div></a>
+    </div>
+    <div class="product-container1">
+      <div class="product-title"><a href="files/TruCorr 9807.pdf" download="Trucorr 9807">TRUCORR 9807</div>
+      <div class="product-info">Corrosion Inhibitor</div></a>
+    </div>  
+  </div>
+      <div class="product-second-line">
+        <div class="product-container2">
+          <div class="product-title"><a href="files/TruPipe 100.pdf" download="Trupipe 100">TRUPIPE 100</div>
+          <div class="product-info">Liquid Pipe on Pipe</div></a>
+        </div> 
+        <div class="product-container2">
+          <div class="product-title"><a href="files/TruSurf 64.pdf" download="Trusurf 64">TRUSURF 64</div>
+          <div class="product-info">Non-Emulsifier</div></a>
+        </div>
+        <div class="product-container2">
+          <div class="product-title"><a href="files/TruSlick 19A.pdf" download="Truslick 19A">TRUSLICK 19A</div>
+          <div class="product-info">Next Generation Anionic Friction Reducer for Hydraulic Fracturing</div></a>
+        </div>
+        <div class="product-container2">
+          <div class="product-title"><a href="files/SI 820.pdf" download="SI 820">SI 820</div>
+          <div class="product-info">High Performance Deposit Control Agent
+            For Oilfield Applications</div></a>
+        </div>
+      </div>
+        
+      </div> 
+          
+      </section>
+	    
+      <section class="page3" aria-label="Products Gallery">
+        <!--PAGE CONTAINER
+	      <div class="page_container">
+          <div class="pro-pre">
+        <img src="images/product-info.png"> </div>
+         </div> PAGE CONTAINER END-->
+      -->
+     
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="images/1-truslick-a.png" alt="Truslick A">
+              <div class="more-info-button"><a href="files/TruSlick A.pdf" download="Truslick A">MORE INFORMATION</a></div>
+            </li>
+            <li class="slide">
+              <img src="images/2-truslick-c.png" alt="Truslick C">
+              <div class="more-info-button"><a href="files/TruSlick C.pdf" download="Truslick C">MORE INFORMATION</a></div>
+            </li>
+            <li class="slide">
+              <img src="images/3-trucorr-9807.png" alt="Trucorr 9807">
+              <div class="more-info-button"><a href="files/TruCorr 9807.pdf" download="TruCorr 9807">MORE INFORMATION</a></div>
+            </li>
+            <li class="slide">
+              <img src="images/4-trupipe-100.png" alt="Trupipe 100">
+              <div class="more-info-button"><a href="files/TruPipe 100.pdf" download="Trupipe 100">MORE INFORMATION</a></div>
+            </li>
+            <li class="slide">
+              <img src="images/5-trusurf-64.png" alt="Trusurf 64">
+              <div class="more-info-button"><a href="files/TruSurf 64.pdf" download="Trusurf 64">MORE INFORMATION</a></div>
+            </li>
+            <li class="slide">
+              <img src="images/6-truslick-19a.png" alt="Truslick 19A">
+              <div class="more-info-button"><a href="files/TruSlick 19A.pdf" download="Truslick 19A">MORE INFORMATION</a></div>
+            </li>
+            <li class="slide">
+              <img src="images/7-si-820.png" alt="Si 820">
+              <div class="more-info-button"><a href="files/SI 820.pdf" download="Si 820">MORE INFORMATION</a></div>
+            </li>
+
+          </ul>
+        </div>
+      
+         
+
+  	   
+        
+        
+      </section>  
+	    <section class="page4">
+	      <div class="page_container">
+         
+          <div class="page-title-container">
+            <div class="page-title">CONTACT</div>
+            <div class="title-lines"></div>
+          </div>        
+           <!--CONTACT FORM AND MAP-->
+           <div class="contact-in">
+            <!--MAP-->
+            <div class="contact-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21050.992491879584!2d-79.87625073656824!3d39.70426751512185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88356f6118057925%3A0x6355b15259bcce80!2s6021%20Woodland%20Bluff%20Rd%2C%20Morgantown%2C%20WV%2026508%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1663190240417!5m2!1str!2str" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div><!--MAP END-->
+              <!--CONTACT FORM-->
+              <div class="contact-form">
+                <div class="contact-title">Contact Us</div> 
+                <form action="action="https://formsubmit.co/aydncrn1@gmail.com" method="POST"">
+                  <input type="text" placeholder="Name" class="contact-form-txt"/>
+                  <input type="text" placeholder="E-mail" class="contact-form-txt"/>
+                  <textarea placeholder="Message" class="contact-form-txtarea"></textarea>
+                  <button type="submit" class="contact-form-btn">Submit</button>
+                </form>
+              </div>
+  
+            </div><!--CONTACT FORM AND MAP END-->  
+          
+
+  	    </div>
+        
+        
+      </section>
+
+      
+    </div>
+  </div>
+  <script>
+	 onePageScroll(".main", {
+     sectionContainer: "section",
+     loop: true,
+     responsiveFallback: false
+   });
+		
+	</script>
+
+</body>
+</html>
